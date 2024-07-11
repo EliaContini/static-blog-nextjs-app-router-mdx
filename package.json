@@ -1,0 +1,25 @@
+{
+  "name": "static-blog-nextjs-app-router-mdx",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettify": "prettier . --write"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "3.0.1",
+    "@mdx-js/react": "3.0.1",
+    "@next/mdx": "14.2.4",
+    "next": "14.2.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.4",
+    "prettier": "3.3.2"
+  }
+}

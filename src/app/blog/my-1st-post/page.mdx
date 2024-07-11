@@ -1,0 +1,30 @@
+import Image from "next/image";
+
+import FormatDate from "@/components/FormatDate";
+import placeholder from "./placeholder.png";
+
+export const metadata = {
+  authors: [
+    {
+      name: "Elia Contini",
+    },
+  ],
+  datePublish: "2024-07-10T10:00:00Z",
+  description: "Description of Welcome to my MDX page!",
+  keywords: ["nextjs", "app router", "mdx"],
+  title: "Welcome to my MDX page!",
+};
+
+# {metadata.title}
+
+<FormatDate date={metadata.datePublish} />
+
+This is some **bold** and _italics_ text.
+
+This is a list in markdown:
+
+- One
+- Two
+- Three
+
+<Image src={placeholder} alt="Just a placeholder image" />

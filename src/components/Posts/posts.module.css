@@ -1,0 +1,38 @@
+.Posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Post {
+  margin-bottom: 16px;
+}
+
+.Post-title {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.Post-description {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.Post-tags {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.Post-tags span {
+  background-color: #ccc;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 80%;
+  margin-right: 8px;
+  padding: 2px 4px;
+}
+
+.Post-publishDate {
+}
