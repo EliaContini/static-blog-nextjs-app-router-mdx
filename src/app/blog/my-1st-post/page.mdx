@@ -1,19 +1,51 @@
 import Image from "next/image";
 
 import FormatDate from "@/components/FormatDate";
+import {
+  defaultMetadata,
+  defaultOpenGraph,
+  defaultTwitter,
+} from "@/shared-metadata";
 import placeholder from "./placeholder.png";
 
-export const metadata = {
-  authors: [
-    {
-      name: "Elia Contini",
-    },
-  ],
-  datePublish: "2024-07-10T10:00:00Z",
-  description: "Description of Welcome to my MDX page!",
-  keywords: ["nextjs", "app router", "mdx"],
-  title: "Welcome to my MDX page!",
-};
+export const metadata = (
+  () => {
+    const description = "Description of Welcome to my MDX page!";
+    const title = "Welcome to my MDX page!"
+
+    return {
+      ...defaultMetadata,
+      authors: [
+        {
+          name: "Elia Contini",
+        },
+      ],
+      datePublish: "2024-07-10T10:00:00Z",
+      description: description,
+      keywords: ["nextjs", "app router", "mdx"],
+      title: title,
+
+      openGraph: {
+        ...defaultOpenGraph,
+        description: description,
+        images: [
+          {
+            url: "https://placehold.co/2048x1024?text=Post+1+Open+Graph",
+            width: 2048,
+            height: 1024,
+          },
+        ],
+        title: title,
+      },
+      twitter: {
+        ...defaultTwitter,
+        description: description,
+        images: ["https://placehold.co/2048x1024?text=Post+1+X"],
+        title: title,
+      },
+    }
+  }
+)();
 
 # {metadata.title}
 

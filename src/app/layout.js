@@ -2,13 +2,11 @@
 import Link from "next/link";
 
 // custom
-import { SITE_DESCRIPTION, SITE_PUBLISHER, SITE_TITLE } from "@/constants";
+import { SITE_PUBLISHER, SITE_TITLE } from "@/constants";
+import { defaultMetadata } from "@/shared-metadata";
 import "./globals.css";
 
-export const metadata = {
-  description: SITE_DESCRIPTION,
-  title: SITE_TITLE,
-};
+export const metadata = { ...defaultMetadata };
 
 const PageLayout = ({ children }) => {
   return (

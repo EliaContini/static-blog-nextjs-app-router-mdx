@@ -1,16 +1,48 @@
 import FormatDate from "@/components/FormatDate";
+import {
+  defaultMetadata,
+  defaultOpenGraph,
+  defaultTwitter,
+} from "@/shared-metadata";
 
-export const metadata = {
-  authors: [
-    {
-      name: "Elia Contini",
-    },
-  ],
-  datePublish: "2024-07-11T10:00:00Z",
-  description: "Description of the Second post",
-  keywords: ["nextjs", "app router", "mdx"],
-  title: "My second post",
-};
+export const metadata = (
+  () => {
+    const description = "Description of the Second post";
+    const title = "My second post"
+
+    return {
+      ...defaultMetadata,
+      authors: [
+        {
+          name: "Elia Contini",
+        },
+      ],
+      datePublish: "2024-07-11T10:00:00Z",
+      description: "Description of the Second post",
+      keywords: ["nextjs", "app router", "mdx"],
+      title: "My second post",
+
+      openGraph: {
+        ...defaultOpenGraph,
+        description: description,
+        images: [
+          {
+            url: "https://placehold.co/2048x1024?text=Post+2+Open+Graph",
+            width: 2048,
+            height: 1024,
+          },
+        ],
+        title: title,
+      },
+      twitter: {
+        ...defaultTwitter,
+        description: description,
+        images: ["https://placehold.co/2048x1024?text=Post+2+X"],
+        title: title,
+      },
+    }
+  }
+)();
 
 # {metadata.title}
 
