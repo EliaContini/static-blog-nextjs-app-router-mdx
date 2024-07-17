@@ -10,4 +10,4 @@ This starter is built from scratch. In the posts below I explain the steps I did
 
 - Part 1: [Build the base](https://elia.contini.page/blog/static-blog-nextjs-14-app-router-mdx).<br/>Code available on the branch [part-1](https://github.com/EliaContini/static-blog-nextjs-app-router-mdx/tree/part-1).
 
-- Part 2: [Add social cards and SEO metadata](https://elia.contini.page/blog/static-blog-nextjs-14-social-cards).<br/>Code available on the branch [part-2](https://github.com/EliaContini/static-blog-nextjs-app-router-mdx/tree/part-2).
+- Part 2: [Add social cards and robots.txt](https://elia.contini.page/blog/static-blog-nextjs-14-social-cards-robots).<br/>Code available on the branch [part-2](https://github.com/EliaContini/static-blog-nextjs-app-router-mdx/tree/part-2).
