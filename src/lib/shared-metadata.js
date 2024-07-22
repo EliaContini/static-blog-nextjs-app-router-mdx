@@ -1,5 +1,5 @@
 // custom
-import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/constants";
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "./constants.mjs";
 
 export const defaultOpenGraph = {
   title: {

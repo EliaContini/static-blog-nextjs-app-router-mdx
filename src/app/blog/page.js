@@ -1,11 +1,11 @@
 // custom
-import Api from "@/api";
+import Api from "@/lib/api";
 import Posts from "@/components/Posts";
 import {
   defaultMetadata,
   defaultOpenGraph,
   defaultTwitter,
-} from "@/shared-metadata";
+} from "@/lib/shared-metadata";
 
 const api = Api();
 
