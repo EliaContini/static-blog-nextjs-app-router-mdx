@@ -1,5 +1,5 @@
 // custom
-import Api from "@/api";
+import Api from "@/lib/api";
 import Posts from "@/components/Posts";
 
 const api = Api();

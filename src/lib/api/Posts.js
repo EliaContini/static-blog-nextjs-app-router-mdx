@@ -20,7 +20,7 @@ const Posts = () => {
         //
         // import() does NOT work using path.join() output
         //
-        const { metadata } = await import(`./../app/blog/${slug}/page.mdx`);
+        const { metadata } = await import(`./../../app/blog/${slug}/page.mdx`);
 
         const post = {
           metadata,

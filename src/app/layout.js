@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // custom
-import { SITE_DESCRIPTION, SITE_PUBLISHER, SITE_TITLE } from "@/constants";
+import { SITE_DESCRIPTION, SITE_PUBLISHER, SITE_TITLE } from "@/lib/constants";
 import "./globals.css";
 
 export const metadata = {
