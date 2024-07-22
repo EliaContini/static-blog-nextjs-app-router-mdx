@@ -2,8 +2,8 @@
 import Link from "next/link";
 
 // custom
-import { SITE_PUBLISHER, SITE_TITLE } from "@/constants";
-import { defaultMetadata } from "@/shared-metadata";
+import { SITE_PUBLISHER, SITE_TITLE } from "@/lib/constants";
+import { defaultMetadata } from "@/lib/shared-metadata";
 import "./globals.css";
 
 export const metadata = { ...defaultMetadata };

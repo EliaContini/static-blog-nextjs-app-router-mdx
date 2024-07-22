@@ -1,5 +1,5 @@
 // custom
-import { SITE_DESCRIPTION, SITE_TITLE } from "@/constants";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/lib/constants";
 
 const Home = () => {
   return (
